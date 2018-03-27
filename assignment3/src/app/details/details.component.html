@@ -1,0 +1,3 @@
+<button (click)="onToggleDetails()" class="btn btn-primary" type="button" name="button">Display Details</button>
+<p *ngIf="detailVisible">Hey</p>
+<mu-log-line *ngFor="let logline of logLines" [details]="logLines[logLines.length-1]" [toggleCount]="toggleCount"></mu-log-line>
