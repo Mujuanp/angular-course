@@ -1,0 +1,22 @@
+<div class="col-xs-12">
+  <a href="#" class="list-group-item clearfix" (click)="onClick()">
+    <div class="row">
+      <div class="col-lg-auto">
+        <div class="float-left">
+          <h4 class="list-group-item-heading">{{recipe.name}}</h4>
+        </div>
+        <span class="float-right">
+          <img src="{{recipe.imagePath}}" alt="{{recipe.name}}" class="img-responsive" style="max-height: 50px;">
+
+       <button class="btn btn-primary" type="button" name="button" *ngIf="showDetails" >To Shipping list</button>
+       <button class="btn btn-primary" type="button" name="button" *ngIf="showDetails" >Delete</button>
+
+        </span>
+      </div>
+    </div>
+
+  </a>
+  <app-recipe-detail [visible]="showDetails" [recipe]="recipe"></app-recipe-detail>
+
+</div>
+

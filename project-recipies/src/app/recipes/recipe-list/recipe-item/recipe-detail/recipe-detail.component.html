@@ -1,0 +1,17 @@
+
+<div class="col-xl-12" *ngIf="visible">
+  <hr>
+  <div class="float-left">
+    <h4 class="form-text">Name: </h4>
+    <h4 class="form-text">Description: </h4>
+    <h4 class="form-text">Image path: </h4>
+
+  </div>
+  <div class="float-right">
+    <input [(ngModel)]="recipe.name" type="text" class="form-control" name="" value="">
+    <input [(ngModel)]="recipe.description" type="text" class="form-control" name="" value="">
+    <input [(ngModel)]="recipe.imagePath" type="text" class="form-control" name="" value="">
+
+  </div>
+
+</div>

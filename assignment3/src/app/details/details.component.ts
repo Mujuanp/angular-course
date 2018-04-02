@@ -24,7 +24,7 @@ export class DetailsComponent implements OnInit {
 
     this.detailVisible = !this.detailVisible;
     this.toggleCount++;
-    this.logLines.push('Toggle #' + this.toggleCount + '. Now are: ' + (this.detailVisible ? 'Visible' : 'Not visible') + '.');
+    this.logLines.push('Toggle ' + new Date() + '. Now are: ' + (this.detailVisible ? 'Visible' : 'Not visible') + '.');
   }
 
 
